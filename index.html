@@ -1,98 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hovodzak</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Hovodzak</title>
 
-  <!-- SEO basics -->
-  <meta name="description" content="Hovodzak — personal site hosted on GitHub Pages." />
-  <meta name="author" content_job="Your Name" />
+	<!-- SEO basics -->
+	<meta name="description" content="Hovodzak — personal site hosted on GitHub Pages." />
+	<meta name="author" content_job="Your Name" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" />
+	<!-- Favicon -->
+	<link rel="icon" href="/favicon.ico" />
 
-  <!-- Simple styling -->
-  <style>
-    :root {
-      --bg: #0f1220;
-      --fg: #e6e6eb;
-      --muted: #9aa0b4;
-      --accent: #6c7cff;
-    }
+	<!-- Simple styling -->
+	<style>
+		:root {
+			--bg: #0f1220;
+			--fg: #e6e6eb;
+			--muted: #9aa0b4;
+			--accent: #6c7cff;
+		}
 
-    * {
-      box-sizing: border-box;
-    }
+		* {
+			box-sizing: border-box;
+		}
 
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-    }
+		body {
+			margin: 0;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+				Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+			background: var(--bg);
+			color: var(--fg);
+			line-height: 1.6;
+		}
 
-    main {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      text-align: center;
-    }
+		main {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 2rem;
+			text-align: center;
+		}
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0.5rem;
+		}
 
-    p {
-      max-width: 600px;
-      color: var(--muted);
-    }
+		p {
+			max-width: 600px;
+			color: var(--muted);
+		}
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
+		a {
+			color: var(--accent);
+			text-decoration: none;
+			font-weight: 500;
+		}
 
-    a:hover {
-      text-decoration: underline;
-    }
+		a:hover {
+			text-decoration: underline;
+		}
 
-    footer {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-  </style>
+		footer {
+			margin-top: 2rem;
+			font-size: 0.9rem;
+			color: var(--muted);
+		}
+	</style>
 </head>
 
 <body>
-  <main>
-    <h1>hovodzak.hu</h1>
-    <p>
-      This site is live on GitHub Pages.  
-      Edit <code>index.html</code> to build whatever you want.
-    </p>
+	<main>
+		<h1>hovodzak.hu</h1>
+		<p>
+			This site is live on GitHub Pages.
+			Edit <code>index.html</code> to build whatever you want.
+		</p>
 
-    <p>
-      <a href="https://github.com/imrehov" target="_blank" rel="noopener">
-        GitHub
-      </a>
-    </p>
+		<p>
+			<a href="https://github.com/imrehov" target="_blank" rel="noopener">
+				GitHub
+			</a>
+		</p>
 
-    <footer>
-      © <span id="year"></span> Your Name
-    </footer>
-  </main>
+		<footer>
+			© <span id="year"></span> Your Name
+		</footer>
+	</main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+	<script>
+		document.getElementById("year").textContent = new Date().getFullYear();
+	</script>
 </body>
+
 </html>
