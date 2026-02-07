@@ -1,86 +1,94 @@
 /* ========== base ========== */
 :root {
-  --bg: #0b0e11;
-  --fg: #d0d7e0;
-  --muted: #7a8396;
-  --accent: #7cf7c2;
-  --border: #1f2430;
+	--bg: #0b0e11;
+	--fg: #d0d7e0;
+	--muted: #7a8396;
+	--accent: #7cf7c2;
+	--border: #1f2430;
 }
+
 @font-face {
-  font-family: "JetBrains Mono";
-  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: "JetBrains Mono";
+	src: url("/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url("/fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: "JetBrains Mono",
-               ui-monospace, monospace;
-  line-height: 1.6;
+	margin: 0;
+	background: var(--bg);
+	color: var(--fg);
+	font-family: "JetBrains Mono", ui-monospace, monospace;
+	line-height: 1.6;
 }
 
 /* ========== layout ========== */
 main {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem;
-  max-width: 720px;
-  margin: 0 auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+	max-width: 720px;
+	margin: 0 auto;
 }
 
 /* ========== typography ========== */
 h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
 p {
-  margin: 0.5rem 0 1rem;
-  color: var(--muted);
+	margin: 0.5rem 0 1rem;
+	color: var(--muted);
 }
 
 code {
-  background: var(--border);
-  padding: 0.15rem 0.35rem;
-  border-radius: 4px;
-  color: var(--fg);
-  font-size: 0.9rem;
+	background: var(--border);
+	padding: 0.15rem 0.35rem;
+	border-radius: 4px;
+	color: var(--fg);
+	font-size: 0.9rem;
 }
 
 /* ========== links ========== */
 a {
-  color: var(--accent);
-  text-decoration: none;
+	color: var(--accent);
+	text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* ========== footer ========== */
 footer {
-  margin-top: 10rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+	margin-top: 10rem;
+	font-size: 0.85rem;
+	color: var(--muted);
 }
 
 /* ========== terminal touch ========== */
 ::selection {
-  background: var(--accent);
-  color: var(--bg);
+	background: var(--accent);
+	color: var(--bg);
 }
